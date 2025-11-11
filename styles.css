@@ -311,7 +311,7 @@ body {
   border-radius: 20px;
   padding: 20px;
 
-  border: 16px solid transparent;
-  border-image: url("images/flowers.png") 30 round;
+  /* ✅ добавляем рамку из цветов */
+  border: 18px solid transparent;
+  border-image: url("images/flowers.jpg") 30 round;
 }
-  
