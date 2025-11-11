@@ -1,0 +1,317 @@
+/* Общий фон страницы */
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  background: linear-gradient(180deg, #fff0f6 0%, #ffe6ef 100%);
+  color: #5b372e;
+}
+
+/* Центрированная узкая полоса */
+.page-bg {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* сама карточка-полоска */
+.center-strip {
+  width: 100%;
+  max-width: 640px;         /* ширина полосы */
+  background: rgba(255,255,255,0.95);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(91,55,46,0.12);
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 0 16px;
+}
+
+/* Хедер */
+.hero {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.names {
+  font-size: 44px;
+  margin: 6px 0;
+  letter-spacing: 1px;
+}
+.date {
+  margin: 2px 0 12px;
+  font-size: 18px;
+  color: #7a5a53;
+}
+.subtitle {
+  margin: 0 0 18px;
+  font-size: 18px;
+  color: #7a5a53;
+}
+
+/* Фото */
+.photo-block { text-align: center; margin-bottom: 18px; }
+.photo {
+  width: 88%;
+  max-width: 420px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(91,55,46,0.08);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Текстовый блок */
+.text-block {
+  text-align: center;
+  margin-bottom: 18px;
+}
+.text-block p {
+  margin: 0 auto;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+/* Детали (план, место, дресс-код, пожелания) */
+.details-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 6px 18px rgba(91,55,46,0.04);
+}
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+.card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+.map {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+/* RSVP форма */
+.rsvp-block {
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rsvp-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  text-align: left;
+}
+.rsvp-form input[type="text"],
+.rsvp-form select,
+.rsvp-form textarea {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e6d6d4;
+  font-size: 14px;
+  margin-top: 6px;
+  font-family: inherit;
+}
+.rsvp-form button {
+  margin: 8px auto 0;
+  padding: 10px 26px;
+  border-radius: 24px;
+  border: 1px solid #5b372e;
+  background: transparent;
+  color: #5b372e;
+  font-size: 16px;
+  cursor: pointer;
+}
+.rsvp-form button:hover {
+  background: #5b372e;
+  color: #fff;
+}
+/* Кнопка открытия карты */
+.map-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 24px;
+  border: 1px solid #5b372e;
+  color: #5b372e;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.25s, color 0.25s, transform 0.12s;
+  box-shadow: 0 6px 18px rgba(91,55,46,0.08);
+}
+
+.map-btn:hover {
+  background: #5b372e;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Небольшая адаптация для мобильных */
+@media (max-width: 480px) {
+  .map-btn { padding: 12px 22px; font-size: 16px; }
+}
+
+
+/* Контакты */
+.contacts {
+  text-align: center;
+  margin-top: 8px;
+  color: #6a4f4a;
+}
+
+/* Адаптив */
+@media (max-width: 680px) {
+  .center-strip { padding: 20px; }
+  .names { font-size: 36px; }
+  .photo { width: 95%; }
+}
+.countdown {
+  background: #ffffff;
+  padding: 25px;
+  margin: 25px auto;
+  max-width: 600px;
+  border-radius: 25px;
+  border: 3px solid #ffc1d6;
+  box-shadow: 0px 0px 15px rgba(255, 182, 193, 0.5);
+}
+
+.timer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #5b372e;
+  margin-top: 10px;
+}
+
+.timer-box .heart {
+  font-size: 28px;
+  margin: 0 10px;
+}
+
+.numbers {
+  background: #ffe6ef;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 2px solid #ffb1cb;
+  }
+  
+.calendar-real {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #ffffff;
+  border: 3px solid #ffb6c9;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(255,182,193,0.45);
+}
+
+.calendar-box {
+  background: #ffe3ec;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.month-name {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #5b372e;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  text-align: center;
+}
+
+.calendar-grid div {
+  padding: 10px 0;
+  font-size: 18px;
+  color: #5b372e;
+}
+
+.w {
+  font-weight: bold;
+  color: #a14b61;
+}
+
+.day-heart {
+  background: #ff7fa7;
+  color: #fff;
+  border-radius: 12px;
+  font-weight: bold;
+  animation: calendarPulse 1.3s infinite;
+}
+
+@keyframes calendarPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+  100% { transform: scale(1); }
+  }
+/* === Ограничиваем ширину таймера и ставим по центру === */
+.timer {
+  max-width: 300px;
+  margin: 0 auto;
+  background: #ffffffaa;
+  padding: 12px;
+  border-radius: 15px;
+  font-size: 22px;
+}
+
+/* === Ограничиваем ширину календаря === */
+.calendar-section {
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.calendar {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* === Мобильная версия (телефоны) === */
+@media (max-width: 480px) {
+  .timer {
+    max-width: 260px;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .calendar-section {
+    max-width: 260px;
+  }
+
+  .calendar {
+    max-width: 240px;
+  }
+
+  .calendar th,
+  .calendar td {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+    padding: 6px;
+  }
+.main-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+
+  border: 16px solid transparent;
+  border-image: url("images/flowers.png") 30 round;
+}
+  
