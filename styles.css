@@ -305,13 +305,15 @@ body {
     padding: 6px;
   }
 .main-container {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
   background: #ffffff;
   border-radius: 20px;
   padding: 20px;
 
-  /* ✅ добавляем рамку из цветов */
+  /* ✅ Рамка из цветов */
   border: 18px solid transparent;
-  border-image: url("images/flowers.jpg") 30 round;
+  border-image-source: url("images/flowers.jpg");
+  border-image-slice: 60;
+  border-image-repeat: round;
 }
